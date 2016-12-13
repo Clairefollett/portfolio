@@ -1,0 +1,14 @@
+.main-head {
+  float: left;
+  padding: 0 0 2px 0
+}
+.nav-menu {
+  float: left;
+}
+#clearfix {
+  clear: both;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 8px 0 0 0;
+}
