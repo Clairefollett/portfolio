@@ -1,0 +1,15 @@
+article {
+  border-bottom: 2px solid green;
+  float: left;
+  margin: 0 3%;
+}
+
+p {
+  display: inline-block;
+}
+
+body {
+  font-size: 100%;
+  color: black;
+  float: left;
+}

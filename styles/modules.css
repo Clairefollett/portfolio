@@ -1,0 +1,21 @@
+.template {
+  display: none;
+}
+
+.byline {
+  font-weight: bold;
+  float: left;
+}
+.project-body {
+  float: left
+}
+.nav-menu {
+  padding: 2px 2px 2px 6px;
+}
+.nav-menu ul {
+  display: block;
+}
+.nav-menu ul li {
+  display: inline;
+  border-bottom: none;
+}

@@ -9,21 +9,37 @@
     <link rel="stylesheet" href="styles/modules.css">
   </head>
   <body>
-    <header class="main-head">
+    <header class="header clearfix">
+      <section class="main-head">
       <h1>Claire's Portfolio</h1>
       <h4>By: Claire Follett</h4>
+      </section>
+      <nav class="nav-menu">
+        <div class="icon-menu"></div>
+        <ul>
+          <li class="tab" data-content="articles"><a href="" class="">Home</a></li>
+          <li class="tab" data-content="about"><a href="" class="">About</a></li>
+          <li><a href="https://github.com/Clairefollett"target="_blank" class="">Github</a></li>
+          <li><a href="" target="_blank" class="">Facebook</a></li>
+          </ul>
+      </nav>
     </header>
-    <div id="clearfix">
-    </div>
-    <nav class="nav-menu">
-      <div class="icon-menu"></div>
-      <ul>
-        <li class="tab" data-content="articles"><a href="" class="">Home</li>
-        <li class="tab" data-content="about"><a href="" class="">About</li>
-        <li><a href="https://github.com/Clairefollett" target="_blank" class="">Github</li>
-        <li><a href="https://www.facebook.com" target="_blank" class="">Facebook</li>
-      </ul>
-    </nav>
-
+      <main>
+        <section id="projects">
+          <article class="template" data-category="about-me">
+            <header>
+              <h1>Title</h1>
+              <div class="byline">
+                By: <p>Author Name</p>
+              </div>
+            </header>
+          <section class="project-body"></section>
+        </article>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="scripts/projects.js"></script>
+    <script type="text/javascript" src="scripts/portfolio.js"></script>
   </body>
 </html>
