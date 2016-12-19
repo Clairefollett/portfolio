@@ -5,15 +5,20 @@ function Project (opts) {
   this.title = opts.title;
   this.author = opts.author;
   this.body = opts.body;
+  this.category = opts.category;
 }
 
 Project.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
+  $newProject.removeClass('template');
+
+  $newProject.attr('data-category', this.category);
+  $newProject.attr('data-author', this.author);
+
   $newProject.find('p').html(this.author);
   $newProject.find('h1').html(this.title);
   $newProject.find('section.project-body').html(this.body);
 
-  $newProject.removeAttr('class');
 
   return $newProject;
 };
