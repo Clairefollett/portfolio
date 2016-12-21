@@ -3,19 +3,15 @@ var projectView = {};
 projectView.populateFilters = function() {
   $('article').not('.template').each(function () {
     var authorName, category, optionTag;
-    console.log('I work');
     authorName = $(this).attr('data-author');
-    console.log(authorName);
     optionTag = '<option value="' + authorName + '">' + authorName + '</option>';
     $('#author-filter').append(optionTag);
-    console.log(optionTag);
 
     category = $(this).attr('data-category');
-    console.log(category);
     optionTag = '<option value="' + category + '">' + category + '</option>';
-    // if ($('#category-filter option[value"' + category +'"]').length === 0) {
-    //   $('#category-filter').append(optionTag);
-    // }
+    if ($('#category-filter option[value="' + category + '"]').length === 0) {
+      $('#category-filter').append(optionTag);
+    }
   });
 };
 
