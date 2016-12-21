@@ -9,13 +9,44 @@
 .project-body {
   float: left
 }
+
 .nav-menu {
   padding: 2px 2px 2px 6px;
+  float: right;
 }
+
+.icon-menu::before {
+  content: "\2630";
+}
+
+nav:hover .tab-list {
+  display:block;
+}
+nav .icon-menu {
+  float:right;
+}
+
 .nav-menu ul {
-  display: block;
+  display: none;
 }
+
 .nav-menu ul li {
   display: inline;
   border-bottom: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+  .nav-menu {
+    padding: 2px 2px 2px 6px;
+  }
+  .nav-menu ul {
+    display: block;
+  }
+  .nav-menu ul li {
+    display: inline;
+    border-bottom: none;
+  }
 }
