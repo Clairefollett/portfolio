@@ -16,5 +16,5 @@ var projectsData = [
     author: 'Claire Follett',
     body: '<p>The bus-mall had the same exact concept as the Sky Mall Magazines but the one major difference was that this was on a website and they were implemented on busses. It was a website that displayed three images of the products they were selling and the user would click on their favorite product. It would then display another three random products that were different from the last set and the user would do the same thing until they hit 25 clicks. After 25 clicks, it would then display a bar graph of all the images and how many times you clicked on each one.</p>',
     category: 'third'
-  },
+  }
 ];
