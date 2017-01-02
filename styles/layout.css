@@ -6,7 +6,9 @@
 .nav-menu {
   float: left;
 }
-#clearfix {
+.clearfix::after {
+  content:"";
+  display: table;
   clear: both;
 }
 nav ul li {
