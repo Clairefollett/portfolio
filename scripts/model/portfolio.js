@@ -4,8 +4,8 @@ function Project (opts) {
   //contructor function with properties of each project you are posting
   this.title = opts.title;
   this.author = opts.author;
-  this.body = opts.body;
   this.category = opts.category;
+  this.body = opts.body;
 }
 
 Project.prototype.toHtml = function() {
